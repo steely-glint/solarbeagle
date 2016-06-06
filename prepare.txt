@@ -1,5 +1,7 @@
 1) reflash from a modern minimal BBB image
-I used https://debian.beagleboard.org/images/bone-debian-8.4-iot-armhf-2016-05-13-4gb.img.xz
+I used https://debian.beagleboard.org/images/bone-debian-7.9-lxde-4gb-armhf-2015-11-12-4gb.img.xz
+Kernel 4.x beaks the analog access in /sys
+
 2) remove extra services and packages:
 https://hacks.pmf.io/2015/06/21/securing-the-beaglebone-black/
 
