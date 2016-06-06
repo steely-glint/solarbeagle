@@ -1,0 +1,21 @@
+1) reflash from a modern minimal BBB image
+I used https://debian.beagleboard.org/images/bone-debian-8.4-iot-armhf-2016-05-13-4gb.img.xz
+2) remove extra services and packages:
+https://hacks.pmf.io/2015/06/21/securing-the-beaglebone-black/
+
+3) add a volt user
+useradd -m -G dialout,sudo -s /bin/bash volt 
+With a password
+passwd volt
+
+4) install redis and ntp
+apt-get install redis-server ntp
+
+5) supress the HDMI by uncommenting :
+dtb=am335x-boneblack-emmc-overlay.dtb
+in  /boot/uEnv.txt
+
+6) install oracle java 
+sudo apt-get install oracle-java8-installer
+
+
